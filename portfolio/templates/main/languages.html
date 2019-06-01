@@ -1,0 +1,18 @@
+{% extends 'main/base.html'%}
+
+{% block head %}
+<title>Languages</title>
+{% endblock %}
+{% block content %}
+{% include 'main/nav.html'%}
+<div class="container center-align">
+        <h3 class="center-align">Languages I Know</h3>
+        <div class="collection ">
+                <a href="#!" class="collection-item">C</a>
+                <a href="#!" class="collection-item active">C++</a>
+                <a href="#!" class="collection-item">Python<i class="material-icons">favorite</i></a>
+        </div>
+        <a href="{% url 'index' %}" class="right waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Home Page</a>
+</div>
+
+{% endblock %}

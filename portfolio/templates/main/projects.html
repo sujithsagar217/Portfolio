@@ -1,0 +1,18 @@
+{% extends 'main/base.html'%}
+{% block head %}
+<title>Projects</title>
+{% endblock %}
+
+{% block content %}
+{% include 'main/nav.html'%}
+<div class="container center-align">
+        <h3 class="center-align">My projects</h3>
+        <div class="collection ">
+                <a href="#!" class="collection-item">Snake and Ladders</a>
+                <a href="#!" class="collection-item active">Portfolio</a>
+                <a href="#!" class="collection-item">Decentralized Social Networking System</a>
+        </div>
+        <a href="{% url 'index' %}" class="right waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Home Page</a>
+</div>
+
+{% endblock %}
